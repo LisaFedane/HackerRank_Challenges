@@ -1,0 +1,30 @@
+"""
+https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list/problem
+
+Given the participants' score sheet for your University Sports Day, you are required to find the runner-up score. You are given  scores. Store them in a list and find the score of the runner-up.
+
+INPUT FORMAT: The first line contains . The second line contains an array   of  integers each separated by a space.
+
+CONSTRAINTS: 2<=n<=10   AND   -100 <=A[i] <= 100
+
+OUTPUT FORMAT: Print the runner-up score.
+
+SAMPLE INPUT:
+5
+2 3 6 6 5
+SAMPLE OUTPUT: 
+5
+EXPLANATION: Given list is [2,3,6,6,5]. The maximum score is 6, second maximum is 5. Hence, we print 5 as the runner-up score.
+"""
+
+if __name__ == '__main__':
+    n = input()
+    score_list = (input())
+
+    score_list = score_list.split()
+
+    score_list = [int(x) for x in score_list]
+
+    score_list.sort()
+
+    print(score_list[-2])
