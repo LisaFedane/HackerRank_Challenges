@@ -1,0 +1,18 @@
+"""
+https://www.hackerrank.com/challenges/python-loops/problem
+Challenge: Read an integer N. For all numbers in range of N print the square of the number. 
+Example: 
+N = 5
+Output:
+0
+1
+4
+9
+16
+"""
+
+
+num = int(input())
+
+for i in range (0, num):
+  print (i * i)
