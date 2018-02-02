@@ -1,0 +1,41 @@
+"""
+https://www.hackerrank.com/challenges/python-tuples/problem
+TASK 
+Given an integer,n , and  n space-separated integers as input, create 
+a tuple, t , of those n integers. Then compute and print the result of
+hash(t).
+
+NOTE: hash() is one of the functions in the __builtins__ module, so it
+need not be imported.
+
+INPUT FORMAT
+The first line contains an integer, n , denoting the number of 
+elements in the tuple. 
+The second line contains n space-separated integers describing the 
+elements in tuple t.
+
+OUTPUT FORMAT
+
+Print the result of hash(t).
+
+SAMPLE INPUT
+
+2
+1 2
+
+SAMPLE OUTPUT
+
+3713081631934410656
+
+"""
+
+n = int(input())
+hash_list = (input())
+
+hash_list = hash_list.split()
+
+hash_list = [int(x) for x in hash_list]
+
+tup_list = tuple(hash_list)
+
+print (hash(tup_list))
